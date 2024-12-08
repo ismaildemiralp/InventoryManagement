@@ -40,8 +40,3 @@ Bu proje, **Google Sheets** entegrasyonu ile **dinamik QR kod oluşturma** ve **
 - Qt kütüphanesi (`github.com/therecipe/qt`)
 - Google Sheets API (`google.golang.org/api/sheets/v4`)
 - QR kod kütüphanesi (`github.com/skip2/go-qrcode`)
-
-## Katkıda Bulunma
-
-- Projeye katkıda bulunmak için bir **pull request** oluşturabilirsiniz.
-- Geri bildirimleriniz için teşekkür ederiz! 😊
