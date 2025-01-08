@@ -32,7 +32,7 @@ Bu proje, **Google Sheets** entegrasyonu ile **dinamik QR kod oluşturma** ve **
    Her cihaz için QR kodlar oluşturulur ve kaydedilir. QR kodlar tarandığında cihaz bilgilerine URL üzerinden erişilebilir olur.
 
 3. **Web Sunucusu:**  
-   Web sunucusu başlatılır ve cihaz bilgileri **http://0.0.0.0:8080/devices/{Varlık Numarası}** adresinde görüntülenebilir.
+   Web sunucusu başlatılır ve cihaz bilgileri **http://hostIP:8080/devices/{Demirbas No}** adresinde görüntülenebilir.
 
 ## Gereksinimler
 
