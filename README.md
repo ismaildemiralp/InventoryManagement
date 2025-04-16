@@ -1,42 +1,47 @@
-# Envanter Yönetim Sistemi
+Sure! Here's the English translation of your project description:
 
-Bu proje, **Google Sheets** entegrasyonu ile **dinamik QR kod oluşturma** ve **envanter takibi** sağlayan bir sistemdir.
+---
 
-## Özellikler
+# Inventory Management System
 
-### 📋 Envanter Yönetimi
-- Google Sheets üzerinden envanter bilgilerini (Varlık Numarası, Tür, Kullanıcı, Garanti Bilgileri vb.) okur.
-- Envanter bilgilerindeki güncellemeleri algılar ve dinamik olarak QR kod içeriklerini günceller.
+This project is a system that enables **dynamic QR code generation** and **inventory tracking** with **Google Sheets** integration.
 
-### 🖨 QR Kod Üretimi
-- Her cihaz için benzersiz bir QR kod oluşturur.
-- QR kodlar cihaz bilgilerini URL üzerinden erişilebilir hale getirir.
-- Güncellenen envanter bilgileri, QR kodun URL'sinde otomatik olarak güncellenir.
+## Features
 
-### 🌐 Web Sunucusu
-- Envanter bilgilerini görüntülemek için bir web arayüzü sağlar.
-- QR kod tarandığında cihaz detayları, kullanıcı dostu bir HTML sayfasında gösterilir.
+### 📋 Inventory Management
+- Reads inventory data (Asset Number, Type, User, Warranty Info, etc.) from Google Sheets.
+- Detects updates in inventory data and dynamically updates the QR code content accordingly.
 
-### 🖥 Masaüstü Uygulaması
-- Qt ile geliştirilmiş bir arayüz sunar.
-- İki temel işlev:
-    - **QR Kod Üret:** Tüm cihazlar için QR kodları toplu olarak oluşturur.
-    - **Envanter Verilerini Güncelle:** Google Sheets'teki değişiklikleri senkronize eder ve QR kodları yeniden oluşturur.
+### 🖨 QR Code Generation
+- Generates a unique QR code for each device.
+- QR codes make device information accessible via a URL.
+- Updated inventory information is automatically reflected in the QR code's URL.
 
-## Nasıl Çalışır?
+### 🌐 Web Server
+- Provides a web interface to view inventory information.
+- When a QR code is scanned, device details are displayed on a user-friendly HTML page.
 
-1. **Google Sheets ile Entegrasyon:**  
-   Google Cloud Console üzerinden bir kimlik doğrulama JSON dosyası oluşturun ve projeye entegre edin.
+### 🖥 Desktop Application
+- Provides an interface developed with Qt.
+- Two main functions:
+    - **Generate QR Codes:** Creates QR codes for all devices in bulk.
+    - **Update Inventory Data:** Syncs changes from Google Sheets and regenerates QR codes.
 
-2. **QR Kod Üretimi:**  
-   Her cihaz için QR kodlar oluşturulur ve kaydedilir. QR kodlar tarandığında cihaz bilgilerine URL üzerinden erişilebilir olur.
+## How It Works
 
-3. **Web Sunucusu:**  
-   Web sunucusu başlatılır ve cihaz bilgileri **http://hostIP:8080/devices/{Demirbas No}** adresinde görüntülenebilir.
+1. **Google Sheets Integration:**  
+   Create an authentication JSON file via Google Cloud Console and integrate it into the project.
 
-## Gereksinimler
+2. **QR Code Generation:**  
+   Generates and saves QR codes for each device. When scanned, the QR code redirects to the device’s information page via URL.
+
+3. **Web Server:**  
+   Starts a web server and displays device information at  
+   **http://hostIP:8080/devices/{Asset Number}**.
+
+## Requirements
 
 - Go 1.19+
-- Qt kütüphanesi (`github.com/therecipe/qt`)
+- Qt library (`github.com/therecipe/qt`)
 - Google Sheets API (`google.golang.org/api/sheets/v4`)
-- QR kod kütüphanesi (`github.com/skip2/go-qrcode`)
+- QR code library (`github.com/skip2/go-qrcode`)
