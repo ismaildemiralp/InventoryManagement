@@ -1,6 +1,3 @@
-Sure! Here's the English translation of your project description:
-
----
 
 # Inventory Management System
 
